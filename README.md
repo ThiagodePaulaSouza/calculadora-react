@@ -6,7 +6,7 @@
 ## 👨‍🔧Tasks todo
 - [x] figma template
 - [x] create css project (empty)
-- [ ] create react project (empty)
+- [x] create react project (empty)
 - [ ] css: add html structure
 - [ ] css: add css style
 - [ ] react: add home page
@@ -26,9 +26,9 @@ cd calculadora-react
 Finally run with these commands
 ```bash
 # Build
-yarn
+npm install
 # Run
-yarn dev
+npm run dev
 ```
 
 ## 👨‍💻How to help:
