@@ -1,0 +1,59 @@
+/*pensar em como separar os grid */
+body
+{
+    display: grid;
+    grid-template-areas:
+    "header "
+    "main "
+    "footer ";
+}
+
+header
+{
+    grid-area: header;
+    background-color: #2A8C82;
+}
+
+header h1
+{
+    text-align: center;
+}
+
+/*posso por um grid dentro de outro?*/
+main
+{
+    grid-area: main;
+    background-color: #41BFB3;
+    grid-template-areas:
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ""
+    ;
+}
+
+.calculator
+{
+    grid-area: calculator;
+    text-align: center;
+}
+
+footer
+{
+    grid-area: footer;
+    background-color: #2A8C82;
+}
+
+.info-rodape
+{
+
+}
+
+.social-links img
+{
+    width: 30px;
+}
