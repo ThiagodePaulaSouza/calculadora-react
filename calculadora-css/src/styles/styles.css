@@ -1,11 +1,14 @@
-/*pensar em como separar os grid */
 body
 {
+    height: 100vh;
+    
     display: grid;
     grid-template-areas:
-    "header "
-    "main "
-    "footer ";
+    "header header header"
+    "main main main"
+    "footer footer footer";
+
+    grid-template-rows: 50px 1fr 50px;
 }
 
 header
@@ -14,17 +17,20 @@ header
     background-color: #2A8C82;
 }
 
+/* ajustes de titulo com interferencia do normalize */
+
 header h1
 {
     text-align: center;
+    margin: auto;
 }
 
-/*posso por um grid dentro de outro?*/
+
 main
 {
     grid-area: main;
     background-color: #41BFB3;
-    grid-template-areas:
+    /* grid-template-areas:
     ""
     ""
     ""
@@ -33,12 +39,11 @@ main
     ""
     ""
     ""
-    ;
+    ; */
 }
 
 .calculator
 {
-    grid-area: calculator;
     text-align: center;
 }
 
@@ -50,10 +55,22 @@ footer
 
 .info-rodape
 {
-
+    display: flex;
+    justify-content: center;
 }
+
+/* criar margem entre as imagens para ajustar ao designe */
 
 .social-links img
 {
+    padding: 0px;
     width: 30px;
+    border-radius: 50px;
+}
+
+#logo-gem
+{
+    width: 30px;
+    border-radius: 50px;
+    filter: brightness(0%)
 }

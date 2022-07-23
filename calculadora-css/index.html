@@ -1,3 +1,5 @@
+<!-- normalize seria o ideal para qualquer projeto, ou só se aplica a alguns especificos? -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -5,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/normalize.css" />
     <link rel="stylesheet" href="./src/styles/styles.css" />
     <script src="./src/index.js" defer></script>
     <title>Calculatora react</title>
@@ -20,6 +23,10 @@
           <span>0</span>
           <img src="" alt="underline">
         </div>
+
+        <!-- descobrir se a utilização de section nesse caso seria semanticamente mais correto -->
+        <!-- criar separações ou classes para dividir as colunas com a grid -->
+        
         <div class="calculator-body">
           <button>$</button>
           <button>C</button>
@@ -46,22 +53,23 @@
     <footer>
       <div class="info-rodape">
         <div class="social-links">
-          <img
+          <img 
             src="https://github.com/thiagodepaulasouza.png"
             alt="imagem do thigas"
           />
-          <a href="https://www.linkedin.com/in/thiagodepaulasouza/">LinkedIn</a>
+          <!-- <a href="https://www.linkedin.com/in/thiagodepaulasouza/">LinkedIn</a>
           <a href="https://www.instagram.com/salequi_lapua/">Instagram</a>
-          <a href="https://github.com/thiagodepaulasouza">GitHub</a>
+          <a href="https://github.com/thiagodepaulasouza">GitHub</a> -->
         </div>
+        <img id="logo-gem" src="../readme-assets/logo-GEM.png" alt="Logotipo da GEM">
         <div class="social-links">
           <img
             src="https://github.com/CarlosMarquetti.png"
             alt="imagem do bigbig"
           />
-          <a href="https://github.com/CarlosMarquetti">GitHub</a>
+          <!-- <a href="https://github.com/CarlosMarquetti">GitHub</a>
           <a href="https://www.instagram.com/eduardo.marquetti/?theme=dark">Instagram</a>
-          <a href="https://www.linkedin.com/in/carlos-marquetti-9066a8216/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/carlos-marquetti-9066a8216/">LinkedIn</a> -->
         </div>
       </div>
     </footer>
