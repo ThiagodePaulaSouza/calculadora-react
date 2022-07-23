@@ -4,15 +4,18 @@
   --bg-green-500: #2A8C82;
   --bg-green-600: #275950;
   --text-color: #000;
-}
-
-html, body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--bg-green-400);
   color: var(--text-color);
 }
+html {
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-green-400);
+}
 
+/* Header */
 header {
+  position: fixed;
   background-color: var(--bg-green-500);
   width: 100%;
   padding: 10px;
@@ -22,9 +25,40 @@ header {
   font-size: 1.5rem;
 }
 
+/* Main */
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculator {
+  display: block;
+  background: var(--bg-green-300);
+  border: 2px solid var(--bg-green-500);
+  border-radius: 5px;
+  margin-inline: 10px;
+  width: 600px;
+  height: 70%;
+}
+
+main .calculator .calculator-head {
+  background: #c0b30059;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 50%;
+  padding: 10px;
+  height: 20%;
+}
+
+
+/* Footer */
 footer {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   bottom: 0;
   position: fixed;
   background-color: var(--bg-green-500);
