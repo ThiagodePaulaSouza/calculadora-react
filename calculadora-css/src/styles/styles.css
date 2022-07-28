@@ -27,11 +27,11 @@ header {
 
 /* Main */
 main {
-  height: 100vh;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 main .calculator {
@@ -40,20 +40,46 @@ main .calculator {
   border: 2px solid var(--bg-green-500);
   border-radius: 5px;
   margin-inline: 10px;
-  width: 600px;
-  height: 70%;
+  width: 500px;
+  height: 700px;
 }
 
-main .calculator .calculator-head {
-  background: #c0b30059;
-  border: 1px solid red;
+.calculator-head {
   display: flex;
   flex-direction: column;
   gap: 50%;
-  padding: 10px;
+  padding: 15px;
   height: 20%;
 }
 
+/* .calculator-head hr {
+  border: 1px solid #000;
+  width: 100%;
+} */
+
+.calculator-body {
+  display: grid;
+  grid-template-areas: "btn1 btn2 btn3 btn4";
+  padding: 15px;
+  width: 100%;
+  height: 80%;
+  gap: 15px;
+}
+
+button {
+  background: var(--bg-green-400);
+  padding: 20px;
+  border: 1px solid var(--bg-green-500);
+  color: #000;
+  width: 100%;
+  height: 100%;
+  font-size: 1.7rem;
+  border-radius: 5px;
+}
+.button-equal {
+  grid-column: 5/3;
+  width: 100%;
+}
 
 /* Footer */
 footer {
